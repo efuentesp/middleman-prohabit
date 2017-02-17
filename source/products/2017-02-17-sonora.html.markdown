@@ -1,0 +1,18 @@
+---
+title: Sonora
+date: 2017-02-17 04:17 UTC
+tags:
+category: "Venta"
+description: "Casas nuevas en Residencial Sonora, San Martìn Texmelucan, Puebla."
+status: "Disponibles"
+price: "$190,000 a $290,000"
+address: "Sonora 123"
+city: "San Martín Texmelucan, Puebla"
+type: "Casas Nuevas"
+bedrooms: 2
+bathrooms: 1
+m2: 72
+garages: 1
+main_image: sonora.jpg
+---
+
