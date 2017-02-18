@@ -16,5 +16,4 @@ garages: 1
 main_image: san-rafael.jpg
 ---
 
-#Descripción
 Este es un ejemplo de una descripción.
