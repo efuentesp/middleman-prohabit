@@ -5,35 +5,51 @@
       <div class="col-footer col-md-4 col-xs-6">
         <h3>Sitio</h3>
         <ul class="no-list-style footer-navigate-section">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/properties">Viviendas</a></li>
-          <li><a href="/contact">Contáctanos</a></li>
-          <li><a href="/about">Quienes somos</a></li>
-          <li><a href="/services">Servicios que ofrecemos</a></li>
-          <li><a href="/faqs">Preguntas frecuentes</a></li>
+          <li><%= link_to 'Inicio', '/' %></li>
+          <li><%= link_to 'Viviendas', '/properties' %></li>
+          <li><%= link_to 'Contáctanos', '/contact' %></li>
+          <li><%= link_to 'Quiénes somos', '/about' %></li>
+          <li><%= link_to 'Servicios que ofrecemos', '/services' %></li>
+          <li><%= link_to 'Preguntas frecuentes', '/faqs' %></li>
         </ul>
       </div>
 
       <div class="col-footer col-md-4 col-xs-6">
         <h3>Contáctanos</h3>
         <p class="contact-us-details">
-            <b><i class="fa fa-home"></i> Dirección:</b><br/>
+            <b><i class="fa fa-map-marker"></i> Dirección:</b><br/>
             <%= data.contact.address1 %><br/>
             <%= data.contact.address2 %><br/>
             <%= data.contact.city %><br/><br/>
             <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %><br/>
             <b><i class="fa fa-mobile"></i> Celular:</b> <%= data.contact.mobile %><br/>
             <b><i class="fa fa-whatsapp"></i> WhatsApp:</b> <%= data.contact.whatsapp %><br/>
-            <b><i class="fa fa-envelope-o"></i> Email:</b> <a href="mailto:<%= data.contact.email %>"><%= data.contact.email %></a>
+            <b><i class="fa fa-envelope-o"></i> Email:</b> <%= mail_to data.contact.email, data.contact.email %>
           </p>
       </div>
       <div class="col-footer col-md-4 col-xs-6">
         <h3>Síguenos en las Redes Sociales</h3>
         <ul class="social-network social-circle">
-          <li><a href="https://www.facebook.com/<%= data.contact.facebook %>" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/<%= data.contact.facebook %>" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/<%= data.contact.linkedin %>" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.youtube.com/user/<%= data.contact.youtube %>" class="icoYoutube" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+          <li>
+            <% link_to 'https://www.facebook.com/'+data.contact.facebook, :class => 'icoFacebook', :title => 'Facebook' do %>
+              <i class="fa fa-facebook"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://twitter.com/'+data.contact.twitter, :class => 'icoTwitter', :title => 'Twitter' do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://www.linkedin.com/company/'+data.contact.linkedin, :class => 'icoLinkedin', :title => 'Linkedin' do %>
+              <i class="fa fa-linkedin"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://www.youtube.com/user/'+data.contact.youtube, :class => 'icoYoutube', :title => 'Youtube' do %>
+              <i class="fa fa-youtube-play"></i>
+            <% end %>
+          </li>
         </ul>
       </div>
     </div>

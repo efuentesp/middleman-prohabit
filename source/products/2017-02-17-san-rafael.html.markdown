@@ -14,6 +14,10 @@ bathrooms: 1
 m2: 62
 garages: 1
 main_image: san-rafael.jpg
+photos:
+  - img: san-rafael.jpg
+    title: Cocina
+    description: Cocina equipada
 ---
 
 Este es un ejemplo de una descripción.

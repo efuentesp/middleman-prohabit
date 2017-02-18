@@ -16,14 +16,14 @@
 	<div class="container">
 		<div class="row">
 			<!-- Product Image & Available Colors -->
-			<div class="col-sm-6">
+			<div class="col-sm-7">
 				<div class="product-image-large">
 					<%= image_tag(current_page.data.main_image, alt: current_page.data.title) %>
 				</div>
 			</div>
 			<!-- End Product Image & Available Colors -->
 			<!-- Product Summary & Options -->
-			<div class="col-sm-6">
+			<div class="col-sm-5">
 				<!-- Contact Form -->
 				<h4>Solicitud de Pre-calificación</h4>
 				<div class="comment-form-wrapper">
@@ -57,18 +57,17 @@
 	<div class="container">
 		<div class="row">
 			<!-- Full Description & Specification -->
+			<h2>Características</h2>
 			<div class="col-sm-12">
-				<h2>Descripción</h2>
 				<div class="col-sm-12 product-details">
 					<div class="product-details">
 						<h4><%= current_page.title %></h4>
+						<h5><%= current_page.data.address %>. <%= current_page.data.city %></h5>
 						<div class="price">
 							<span class="price-was"></span> <%= current_page.data.price %>
 						</div>
-						<h5>Resúmen</h5>
-						<p>
-							<%= current_page.data.description %>
-						</p>
+						<h5>Descripción</h5>
+						<p><%= current_page.data.description %></p>
 						<p><b>Categoria:</b> <%= current_page.data.category %></p>
 						<p><b>Tipo:</b> <%= current_page.data.type %></p>
 						<p><b>Estatus:</b> <%= current_page.data.status %></p>
@@ -80,6 +79,25 @@
 			</div>
 			<!-- End Full Description & Specification -->
 		</div>
+		<br/>
+		<div class="row">
+			<% current_page.data.photos.each do |photo| %>
+			<div class="col-md-6 col-sm-6">
+				<div class="portfolio-item">
+					<div class="portfolio-image">
+						<% link_to '#' do %>
+							<%= image_tag(photo.img, alt: photo.title) %>
+						<% end %>
+					</div>
+					<div class="portfolio-info-fade">
+						<ul>
+							<li class="portfolio-project-name"><%= photo.title %></li>
+							<li><%= photo.description %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<% end %>
 	</div>
 </div>
 
@@ -87,16 +105,23 @@
 	<div class="container">
 		<div class="row">
 			<!-- Full Description & Specification -->
+			<h2>Ubicación</h2>
 			<div class="col-sm-12">
-				<h2>Ubicación</h2>
 				<!-- Map -->
-        <div id="contact-us-map">
+		        <div id="contact-us-map">
 
-        </div>
-        <!-- End Map -->
+		        </div>
+		        <!-- End Map -->
 			</div>
 			<!-- End Full Description & Specification -->
 		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="container">
+		<!-- Related Projects -->
+
 	</div>
 </div>
 

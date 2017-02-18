@@ -25,12 +25,13 @@ title: Contáctanos
         <!-- End Map -->
         <!-- Contact Info -->
         <p class="contact-us-details">
-          <b>Dirección:</b><br/>
+          <b><i class="fa fa-map-marker"></i> Dirección:</b><br/>
           <%= data.contact.address1 %>. <%= data.contact.address2 %><br/>
-          <%= data.contact.city %><br/>
-          <b>Oficina:</b> <%= data.contact.phone %><br/>
-          <b>Celular:</b> <%= data.contact.mobile %><br/>
-          <b>Email:</b> <a href="mailto:<%= data.contact.email %>"><%= data.contact.email %></a>
+          <%= data.contact.city %><br/><br/>
+          <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %><br/>
+          <b><i class="fa fa-mobile"></i> Celular:</b> <%= data.contact.mobile %><br/>
+          <b><i class="fa fa-whatsapp"></i> WhatsApp:</b> <%= data.contact.whatsapp %><br/>
+          <b><i class="fa fa-envelope-o"></i> Email:</b> <%= mail_to data.contact.email, data.contact.email %>
         </p>
         <!-- End Contact Info -->
       </div>

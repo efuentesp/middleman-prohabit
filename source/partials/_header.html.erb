@@ -8,27 +8,27 @@
     <nav id="mainmenu" class="mainmenu">
       <ul>
         <li class="logo-wrapper">
-          <a href="/">
+          <% link_to '/' do %>
             <%= image_tag("logo_40x40.png", alt: data.contact.short_name) %>
-          </a>
+          <% end %>
         </li>
         <li class="active">
-          <a href="/"><%= data.contact.short_name %></a>
+          <%= link_to data.contact.short_name, '/' %>
         </li>
         <li>
-          <a href="/properties">Viviendas</a>
+          <%= link_to 'Viviendas', '/properties' %>
         </li>
         <li>
-          <a href="/services">Nuestros Servicios</a>
+          <%= link_to 'Nuestros Servicios', '/services' %>
         </li>
         <li>
-          <a href="/contact">Contáctanos</a>
+          <%= link_to 'Contáctanos', '/contact' %>
         </li>
         <li>
-          <a href="/about">Quiénes somos</a>
+          <%= link_to 'Quiénes somos', '/about' %>
         </li>
         <li>
-          <a href="/faqs">Preguntas frecuentes</a>
+          <%= link_to 'Preguntas frecuentes', '/faqs' %>
         </li>
       </ul>
     </nav>

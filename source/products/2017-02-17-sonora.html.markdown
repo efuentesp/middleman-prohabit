@@ -14,5 +14,9 @@ bathrooms: 1
 m2: 72
 garages: 1
 main_image: sonora.jpg
+photos:
+  - img: sonora.jpg
+    title: Cocina
+    description: Cocina equipada
 ---
 
