@@ -5,7 +5,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1><%= current_page.data.title %> - <%= current_page.data.price %></h1>
+        <h1><%= current_page.data.title %> <span class="label label-success"><%= current_page.data.price %></span></h1>
+      </div>
+      <div class="col-md-6">
       </div>
     </div>
   </div>
@@ -17,70 +19,121 @@
 		<div class="row">
 			<!-- Product Image & Available Colors -->
 			<div class="col-sm-7">
-				<div class="product-image-large">
-					<%= image_tag(current_page.data.main_image, alt: current_page.data.title) %>
+				<div class="portfolio-item">
+					<div class="portfolio-image">
+						<% link_to '#' do %>
+							<%= image_tag(current_page.data.main_image, alt: current_page.data.title) %>
+						<% end %>
+					</div>
+					<div class="portfolio-info-fade">
+						<ul>
+							<li class="portfolio-project-name"><%= current_page.data.title %> (<%= current_page.data.price %>)</li>
+							<li><%= truncate(current_page.data.description, :length => 300) %></li>
+							<li>
+								<i class="fa fa-home"></i>: <%= current_page.data.m2 %> m<sup>2</sup>
+								-
+								<i class="fa fa-bed"></i>: <%= current_page.data.bedrooms %>
+								-
+								<i class="fa fa-bath"></i>: <%= current_page.data.bathrooms %>
+								-
+								<i class="fa fa-car"></i>: <%= current_page.data.garages %>
+							</li>
+							<li class="portfolio-visit-btn">
+								<% link_to 'mailto:'+data.contact.email, :class => 'btn' do %>
+									<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar Crédito
+								<% end %>
+							</li>
+						</ul>
+					</div>
 				</div>
+
 			</div>
 			<!-- End Product Image & Available Colors -->
 			<!-- Product Summary & Options -->
 			<div class="col-sm-5">
-				<!-- Contact Form -->
-				<h4>Solicitud de Pre-calificación</h4>
-				<div class="comment-form-wrapper">
-					<form class="">
-								<div class="form-group">
-									<label for="comment-name"><i class="fa fa-user-circle-o"></i> <b>Nombre completo</b></label>
-							<input class="form-control" id="comment-name" type="text" placeholder="">
-						</div>
-						<div class="form-group">
-							<label for="comment-email"><i class="fa fa-envelope-o"></i> <b>Correo electónico</b></label>
-							<input class="form-control" id="comment-email" type="text" placeholder="">
-						</div>
-						<div class="form-group">
-							<label for="comment-message"><i class="fa fa-comment-o"></i> <b>Solicitud</b></label>
-							<textarea class="form-control" rows="5" id="comment-message"></textarea>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-large pull-right">Enviar</button>
-						</div>
-						<div class="clearfix"></div>
-							</form>
+				<div class="product-details">
+					<p><%= current_page.data.description %></p>
+					<table class="table">
+						<colgroup>
+							<col class="col-md-1"></col>
+							<col class="col-md-11"></col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td><strong>NOMBRE</strong></td>
+								<td><strong><%= current_page.data.title.upcase %></strong></td>
+							</tr>
+							<tr>
+								<td><strong>DIRECCION</strong></td>
+								<td><%= current_page.data.address %></td>
+							</tr>
+							<tr>
+								<td><strong>CIUDAD</strong></td>
+								<td><%= current_page.data.city %></td>
+							</tr>
+							<tr>
+								<td><strong>PRECIO</strong></td>
+								<td><strong><%= current_page.data.price %></strong></td>
+							</tr>
+							<tr>
+								<td><strong>TIPO</strong></td>
+								<td>
+									<span class="label label-success"><%= current_page.data.category %></span>
+									<span class="label label-info"><%= current_page.data.type %></span>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>DIMENSIONES</strong></td>
+								<td><%= current_page.data.m2 %> m<sup>2</sup> <i class="fa fa-home"></i></td>
+							</tr>
+							<tr>
+								<td><strong>RECAMARAS</strong></td>
+								<td><%= current_page.data.bedrooms %> <i class="fa fa-bed"></i></td>
+							</tr>
+							<tr>
+								<td><strong>BAÑOS</strong></td>
+								<td><%= current_page.data.bathrooms %> <i class="fa fa-bath"></i></td>
+							</tr>
+							<tr>
+								<td><strong>ESTACIONAMIENTOS</strong></td>
+								<td><%= current_page.data.garages %> <i class="fa fa-car"></i></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<!-- End Contact Form -->
 			</div>
 			<!-- End Product Summary & Options -->
 		</div>
 	</div>
 </div>
 
+<%= partial 'partials/calltoaction' %>
+
 <div class="section">
 	<div class="container">
 		<div class="row">
 			<!-- Full Description & Specification -->
-			<h2>Características</h2>
-			<div class="col-sm-12">
-				<div class="col-sm-12 product-details">
-					<div class="product-details">
-						<h4><%= current_page.title %></h4>
-						<h5><%= current_page.data.address %>. <%= current_page.data.city %></h5>
-						<div class="price">
-							<span class="price-was"></span> <%= current_page.data.price %>
-						</div>
-						<h5>Descripción</h5>
-						<p><%= current_page.data.description %></p>
-						<p><b>Categoria:</b> <%= current_page.data.category %></p>
-						<p><b>Tipo:</b> <%= current_page.data.type %></p>
-						<p><b>Estatus:</b> <%= current_page.data.status %></p>
-						<p><b>Precio:</b> <%= current_page.data.price %></p>
-						<p><b>Tamaño:</b> <%= current_page.data.m2 %> m2 - <b>Recamaras:</b> <%= current_page.data.bedrooms %> - <b>Baños:</b> <%= current_page.data.bathrooms %> - <b>Estacionamientos:</b> <%= current_page.data.garages %></p>
-						<%= yield %>
-					</div>
+			<div class="col-sm-6">
+				<h2><i class="fa fa-info-circle" aria-hidden="true"></i> Detalles</h2>
+				<%= yield %>
+			</div>
+			<div class="col-sm-6">
+				<!-- Location -->
+				<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
+				<div class="col-sm-12">
+					<!-- Map -->
+			        <div id="contact-us-map">
+
+			        </div>
+			        <!-- End Map -->
 				</div>
+				<!-- End Location -->
 			</div>
 			<!-- End Full Description & Specification -->
 		</div>
 		<br/>
 		<div class="row">
+			<h2><i class="fa fa-camera" aria-hidden="true"></i> Imágenes</h2>
 			<% current_page.data.photos.each do |photo| %>
 			<div class="col-md-6 col-sm-6">
 				<div class="portfolio-item">
@@ -98,23 +151,6 @@
 				</div>
 			</div>
 			<% end %>
-	</div>
-</div>
-
-<div class="section">
-	<div class="container">
-		<div class="row">
-			<!-- Full Description & Specification -->
-			<h2>Ubicación</h2>
-			<div class="col-sm-12">
-				<!-- Map -->
-		        <div id="contact-us-map">
-
-		        </div>
-		        <!-- End Map -->
-			</div>
-			<!-- End Full Description & Specification -->
-		</div>
 	</div>
 </div>
 

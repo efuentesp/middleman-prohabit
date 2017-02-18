@@ -1,6 +1,6 @@
 <div class="section">
   <div class="container">
-    <h2>Vivienda Nueva</h2>
+    <h2>A la Venta</h2>
     <br/>
     <% blog('products').articles.each do |product| %>
         <div class="row">
@@ -19,20 +19,22 @@
         <div class="portfolio-item-description col-sm-6">
           <br/>
           <% link_to product.url do %>
-            <h3><%= product.title %></h3>
+            <h3><%= product.title %> <span class="label label-primary"><%= product.data.price %></span></h3>
           <% end %>
-          <p><%= product.data.address %>. <%= product.data.city %></p>
-          <p><strong><%= product.data.price %></strong></p>
-          <p>
-            <%= truncate(product.data.description, :length => 500) %>
-          </p>
+          <p><strong><%= product.data.address %>. <%= product.data.city %></strong></p>
+          <p><%= truncate(product.data.description, :length => 200) %></p>
           <ul class="no-list-style">
-            <li><b>Categoria:</b> <%= product.data.category %></li>
-            <li><b>Tipo:</b> <%= product.data.type %></li>
-            <li><b>Estatus:</b> <%= product.data.status %></li>
-            <li><b>Precio:</b> <%= product.data.price %></li>
-            <li><b>Tamaño:</b> <%= product.data.m2 %> m2 - <b>Recamaras:</b> <%= product.data.bedrooms %> - <b>Baños:</b> <%= product.data.bathrooms %> - <b>Estacionamientos:</b> <%= product.data.garages %></li>
-            <li class="portfolio-visit-btn"><%= link_to 'Más Información', product.url, :class => 'btn' %></li>
+            <li>
+              <span class="label label-success"><%= product.data.category %></span> <span class="label label-info"><%= product.data.type %></span>
+            </li>
+            <li>
+              <b><i class="fa fa-home"></i>:</b> <%= product.data.m2 %> m<sup>2</sup> - <b><i class="fa fa-bed"></i>:</b> <%= product.data.bedrooms %> - <b><i class="fa fa-bath"></i>:</b> <%= product.data.bathrooms %> - <b><i class="fa fa-car"></i>:</b> <%= product.data.garages %>
+            </li>
+            <li class="portfolio-visit-btn">
+              <% link_to product.url, :class => 'btn' do %>
+                Más Información <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              <% end %>
+            </li>
           </ul>
         </div>
         <!-- End Project Info Column -->

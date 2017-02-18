@@ -2,22 +2,43 @@
 title: San Rafael
 date: 2017-02-17 04:45 UTC
 tags:
-category: "Venta"
-description: "Casas nuevas en Residencial San Rafael, San Martìn Texmelucan, Puebla."
-status: "Disponibles"
-price: "$160,000 a $180,000"
-address: "San Rafael 123"
-city: "San Martín Texmelucan, Puebla"
-type: "Casas Nuevas"
+category: Venta
+description: Casas nuevas en Residencial San Rafael, San Martìn Texmelucan, Puebla.
+status: Disponible
+price: $160,000 a $180,000
+address: San Rafael 123
+city: San Martín Texmelucan, Puebla
+type: Casas Nuevas
 bedrooms: 2
 bathrooms: 1
 m2: 62
 garages: 1
-main_image: san-rafael.jpg
+main_image: san-rafael/fachada1.jpg
 photos:
-  - img: san-rafael.jpg
+  - img: san-rafael/fachada1.jpg
+    title: Fachada
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/fachada2.jpg
+    title: Fachada
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/fachada3.jpg
+    title: Fachada
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/comedor1.jpg
+    title: Comedor
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/comedor2.jpg
+    title: Comedor
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/cocina1.jpg
     title: Cocina
-    description: Cocina equipada
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/bano1.jpg
+    title: Baño
+    description: Acabados en ladrillo rojo.
+  - img: san-rafael/recamara-principal1.jpg
+    title: Recámara Principal
+    description: Acabados en ladrillo rojo.
 ---
 
 Este es un ejemplo de una descripción.
