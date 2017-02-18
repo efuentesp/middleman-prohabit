@@ -8,8 +8,13 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
+gem 'bootstrap-sass', '~> 3.3.6'
+gem "jquery-middleman"
+gem "font-awesome-sass"
+
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-blog'
+# gem 'middleman-dragonfly_thumbnailer'

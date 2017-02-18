@@ -43,6 +43,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
+# set :fonts_dir,  "fonts"
 
 # Build-specific configuration
 configure :build do
