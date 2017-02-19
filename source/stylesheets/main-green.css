@@ -1938,6 +1938,9 @@ span.color-red {
 #sequence > .sequence-canvas > li.bg14 {
   background-image: url(../images/homepage-slider/slider-bg14.jpg);
 }
+#sequence > .sequence-canvas > li.bg15 {
+  background-image: url(../images/homepage-slider/slider-bg15.jpg);
+}
 #sequence > .sequence-canvas > li img {
   height: 96%;
 }

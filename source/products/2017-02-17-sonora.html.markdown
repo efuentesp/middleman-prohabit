@@ -1,9 +1,9 @@
 ---
-title: Sonora
+title: Conjunto Sonora
 date: 2017-02-17 04:17 UTC
 tags:
 category: Venta
-description: Casas nuevas en Residencial Sonora, San Martìn Texmelucan, Puebla.
+description: Casas nuevas en Residencial Sonora, San Martín Texmelucan, Puebla.
 status: Disponible
 price: $190,000 a $290,000
 address: Sonora 123
@@ -13,7 +13,8 @@ bedrooms: 2
 bathrooms: 1
 m2: 72
 garages: 1
-main_image: sonora.jpg
+main_image: san-rafael/fachada2.jpg
+googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
   - img: sonora.jpg
     title: Cocina

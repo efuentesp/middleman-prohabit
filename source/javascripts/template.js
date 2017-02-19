@@ -40,14 +40,12 @@ $(document).ready(function(){
 	//Contact Us Map
 	if($('#contact-us-map').length > 0){ //Checks if there is a map element
 		var map = L.map('contact-us-map', {
-			center: [51.502, -0.09],
+			center: [19.28310, -98.43697],
 			scrollWheelZoom: false,
 			zoom: 15
 		});
-		L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
-			key: 'BC9A493B41014CAABB98F0471D759707'
-		}).addTo(map);
-		L.marker([51.5, -0.09]).addTo(map).bindPopup("<b>Some Company</b><br/>123 Fake Street<br/>LN1 2ST<br/>London</br>United Kingdom").openPopup();
+		L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZWZ1ZW50ZXNwIiwiYSI6ImNpemMwdzFpZjFhYTYyd3BveXk0bTJrMTgifQ.EjguW3BsM9EUWsKYHYEdjg').addTo(map);
+		L.marker([19.28310, -98.43697]).addTo(map).bindPopup("<b>ProHabit San Martín</b><br/>Av. Libertad Sur No.1<br/>Int. 105 (Planta Alta)<br/>San Martín Texmelucan</br>Puebla").openPopup();
 	}
 
 	$( window ).resize(function() {

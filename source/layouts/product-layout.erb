@@ -34,13 +34,13 @@
 								-
 								<i class="fa fa-bed"></i>: <%= current_page.data.bedrooms %>
 								-
-								<i class="fa fa-bath"></i>: <%= current_page.data.bathrooms %>
+								<i class="fa fa-shower"></i>: <%= current_page.data.bathrooms %>
 								-
 								<i class="fa fa-car"></i>: <%= current_page.data.garages %>
 							</li>
 							<li class="portfolio-visit-btn">
-								<% link_to 'mailto:'+data.contact.email, :class => 'btn' do %>
-									<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar Crédito
+								<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Solicitud para visitar: '+current_page.data.title, :body => 'Favor de agendar visita a la vivienda: '+current_page.data.title+'.' }, :class => 'btn' do %>
+									<i class="fa fa-envelope" aria-hidden="true"></i> Agendar Visita
 								<% end %>
 							</li>
 						</ul>
@@ -92,7 +92,7 @@
 							</tr>
 							<tr>
 								<td><strong>BAÑOS</strong></td>
-								<td><%= current_page.data.bathrooms %> <i class="fa fa-bath"></i></td>
+								<td><%= current_page.data.bathrooms %> <i class="fa fa-shower"></i></td>
 							</tr>
 							<tr>
 								<td><strong>ESTACIONAMIENTOS</strong></td>
@@ -107,7 +107,23 @@
 	</div>
 </div>
 
-<%= partial 'partials/calltoaction' %>
+<!-- Call to Action Bar -->
+<div class="section section-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="calltoaction-wrapper">
+					<h3>¿Te gustó la vivienda y te gustaria verla?</h3>
+					<h4>Solicita una visita aquí.</h4><br/>
+					<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Solicitud para visitar: '+current_page.data.title, :body => 'Favor de agendar visita a la vivienda: '+current_page.data.title+'.' }, :class => 'btn btn-success' do %>
+						<i class="fa fa-envelope" aria-hidden="true"></i> Agendar Visita
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Call to Action Bar -->
 
 <div class="section">
 	<div class="container">
@@ -121,11 +137,12 @@
 				<!-- Location -->
 				<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
 				<div class="col-sm-12">
-					<!-- Map -->
-			        <div id="contact-us-map">
-
-			        </div>
-			        <!-- End Map -->
+		          <!-- Map -->
+		          <iframe src="//www.google.com/maps/embed/v1/directions?origin=<%= data.contact.googlemaps_place %>&destination=<%= current_page.data.googlemaps_place %>
+		            &key= <%= data.contact.googlemaps_key %>"
+		            style="height: 350px; width: 530px" scrolling: "no" allowfullscreen: "" frameborder="0">
+		          </iframe>
+		          <!-- End Map -->
 				</div>
 				<!-- End Location -->
 			</div>
@@ -153,6 +170,8 @@
 			<% end %>
 	</div>
 </div>
+
+<%= partial 'partials/calltoaction' %>
 
 <div class="section">
 	<div class="container">

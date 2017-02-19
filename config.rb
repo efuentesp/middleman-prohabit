@@ -43,7 +43,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
-# set :fonts_dir,  "fonts"
+activate :sprockets
 
 # Build-specific configuration
 configure :build do

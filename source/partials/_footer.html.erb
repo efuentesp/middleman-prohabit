@@ -2,6 +2,7 @@
 <div class="footer">
   <div class="container">
     <div class="row">
+      <br/>
       <div class="col-footer col-md-4 col-xs-6">
         <h3>Sitio</h3>
         <ul class="no-list-style footer-navigate-section">
@@ -28,7 +29,7 @@
           </p>
       </div>
       <div class="col-footer col-md-4 col-xs-6">
-        <h3>Síguenos en las Redes Sociales</h3>
+        <h3>Síguenos en nuestras Redes Sociales</h3>
         <ul class="social-network social-circle">
           <li>
             <% link_to 'https://www.facebook.com/'+data.contact.facebook, :class => 'icoFacebook', :title => 'Facebook' do %>
@@ -55,7 +56,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="footer-copyright">&copy; <%= Time.now.year %> <%= data.contact.long_name %>. Todos los derechos reservados.</div>
+        <div class="footer-copyright">&copy; <%= Time.now.year %> <%= data.contact.long_name %>. Todos los derechos reservados. Desarrollado por: <% link_to 'mailto:efuentesp@gmail.com' do %><i class="fa fa-codepen"></i> NRG-WARE<% end %>
       </div>
     </div>
   </div>
