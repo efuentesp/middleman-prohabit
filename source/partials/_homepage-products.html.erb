@@ -1,6 +1,6 @@
 <div class="section">
   <div class="container">
-    <h2>A la Venta</h2>
+    <h2>Nuevas</h2>
     <br/>
     <% blog('products').articles.each do |product| %>
         <div class="row">
@@ -19,19 +19,23 @@
         <div class="portfolio-item-description col-sm-6">
           <br/>
           <% link_to product.url do %>
-            <h3><%= product.title %> <span class="label label-primary"><%= product.data.price %></span></h3>
+            <h3><%= product.title %><br/></h3>
           <% end %>
-          <p><strong><%= product.data.address %>. <%= product.data.city %></strong></p>
-          <p><%= truncate(product.data.description, :length => 200) %></p>
+          <p><strong><%= product.data.address %>.<br/> <%= product.data.city %></strong></p>
+          <h3><span class="label label-primary"><%= product.data.price %></span></h3>
+          <p><%= truncate(product.data.description, :length => 500) %></p>
           <ul class="no-list-style">
             <li>
               <span class="label label-success"><%= product.data.category %></span> <span class="label label-info"><%= product.data.type %></span>
             </li>
             <li>
-              <i class="fa fa-home"></i>: <%= product.data.m2 %> m<sup>2</sup> - <i class="fa fa-bed"></i>: <%= product.data.bedrooms %> - <i class="fa fa-shower"></i>: <%= product.data.bathrooms %> - <i class="fa fa-car"></i>: <%= product.data.garages %>
+              <span class="label label-default"><i class="fa fa-home"></i> <%= product.data.m2 %> m<sup>2</sup></span>
+              <span class="label label-default"><i class="fa fa-bed"></i> <%= product.data.bedrooms %></span>
+              <span class="label label-default"><i class="fa fa-shower"></i> <%= product.data.bathrooms %></span>
+              <span class="label label-default"><i class="fa fa-car"></i> <%= product.data.garages %></span>
             </li>
             <li class="portfolio-visit-btn">
-              <% link_to product.url, :class => 'btn' do %>
+              <% link_to product.url, :class => 'btn btn-warning' do %>
                 Más Información <i class="fa fa-chevron-right" aria-hidden="true"></i>
               <% end %>
             </li>

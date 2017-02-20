@@ -1,23 +1,36 @@
 ---
-title: Conjunto Sonora
-date: 2017-02-17 04:17 UTC
+title: Conjunto Habitacional Sonora
+date: 2017-02-17 05:17 UTC
 tags:
 category: Venta
-description: Casas nuevas en Residencial Sonora, San Martín Texmelucan, Puebla.
+description: Conjunto habitacional Ecológico compuesto por 222 casas, totalmente cerrado con Caseta de Vigilancia. Casas Unifamiliares de 1 planta y 2 recámaras, ¡con opción a ampliarse hasta 4 recámaras!. Todas con Calentador Solar, Calentador de Paso de Respaldo, Jardín y Patio de Servicio. Con instalaciones de luz, agua y drenaje subterraneas; alumbrado público, áreas verdes con Juegos Infantiles, Zona Deportiva y calles adoquinadas. Ubicadas en calle Sonora No. 1001 en San Rafael Tlanalapa. A 15 minutos de la Bodega Aurerra de San Martín.
 status: Disponible
-price: $190,000 a $290,000
-address: Sonora 123
+price: Desde $347,500
+address: Sonora No. 1001, San Rafael Tlanalapa
 city: San Martín Texmelucan, Puebla
 type: Casas Nuevas
 bedrooms: 2
 bathrooms: 1
-m2: 72
+m2: 48
+land: 6 x 12
 garages: 1
-main_image: san-rafael/fachada2.jpg
+main_image: sonora/fachada1.jpg
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
-  - img: sonora.jpg
-    title: Cocina
-    description: Cocina equipada
+  - img: sonora/fachada1.jpg
+    title: Exterior
+    description:
+  - img: sonora/plano1.jpg
+    title: Plano
+    description:
+  - img: sonora/fachada2.jpg
+    title: Exterior
+    description:
+  - img: sonora/sala-comedor1.jpg
+    title: Sala-Comedor
+    description:
+  - img: sonora/plano2.jpg
+    title: Plano
+    description:
 ---
-
+Todas las casas Unifamiliares cuentan con piso de cemento pulido, cocina con azulejos en área húmeda, tarja y escurridor, cancelería de aluminio en ventanas y puertas exteriores, puertas interiores de tambor prefabricadas, focos LED, los acabados en muros interiores son aparentes, plafones con acabado tipo tirol, baños con azulejo en zona húmeda, WC ahorrador grado ecológico en color blanco; llaves ahorradoras cromadas en regaderas, lavabo y fregadero. Tinaco de 750 lts, calentador solar y calentador de paso. Con impermeabilización prefabricado con acabado grano Terracota y garantizado por 5 años.

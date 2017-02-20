@@ -28,7 +28,7 @@
 					<div class="portfolio-info-fade">
 						<ul>
 							<li class="portfolio-project-name"><%= current_page.data.title %> (<%= current_page.data.price %>)</li>
-							<li><%= truncate(current_page.data.description, :length => 300) %></li>
+							<li><%= truncate(current_page.data.description, :length => 550) %></li>
 							<li>
 								<i class="fa fa-home"></i>: <%= current_page.data.m2 %> m<sup>2</sup>
 								-
@@ -52,7 +52,6 @@
 			<!-- Product Summary & Options -->
 			<div class="col-sm-5">
 				<div class="product-details">
-					<p><%= current_page.data.description %></p>
 					<table class="table">
 						<colgroup>
 							<col class="col-md-1"></col>
@@ -83,8 +82,12 @@
 								</td>
 							</tr>
 							<tr>
-								<td><strong>DIMENSIONES</strong></td>
+								<td><strong>CONSTRUCCIÓN</strong></td>
 								<td><%= current_page.data.m2 %> m<sup>2</sup> <i class="fa fa-home"></i></td>
+							</tr>
+							<tr>
+								<td><strong>TERRENO</strong></td>
+								<td><%= current_page.data.land %> mts <i class="fa fa-map-o"></i></td>
 							</tr>
 							<tr>
 								<td><strong>RECAMARAS</strong></td>
@@ -104,26 +107,16 @@
 			</div>
 			<!-- End Product Summary & Options -->
 		</div>
-	</div>
-</div>
-
-<!-- Call to Action Bar -->
-<div class="section section-white">
-	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="calltoaction-wrapper">
-					<h3>¿Te gustó la vivienda y te gustaria verla?</h3>
-					<h4>Solicita una visita aquí.</h4><br/>
-					<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Solicitud para visitar: '+current_page.data.title, :body => 'Favor de agendar visita a la vivienda: '+current_page.data.title+'.' }, :class => 'btn btn-success' do %>
-						<i class="fa fa-envelope" aria-hidden="true"></i> Agendar Visita
-					<% end %>
-				</div>
+			<!-- Product Image & Available Colors -->
+			<div class="col-sm-12">
+				<p><%= current_page.data.description %></p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- End Call to Action Bar -->
+
+<%= partial 'partials/product-calltoaction' %>
 
 <div class="section">
 	<div class="container">
@@ -140,7 +133,8 @@
 		          <!-- Map -->
 		          <iframe src="//www.google.com/maps/embed/v1/directions?origin=<%= data.contact.googlemaps_place %>&destination=<%= current_page.data.googlemaps_place %>
 		            &key= <%= data.contact.googlemaps_key %>"
-		            style="height: 350px; width: 530px" scrolling: "no" allowfullscreen: "" frameborder="0">
+		            width="530" height="350"
+		            style="border:0" scrolling: "no" allowfullscreen: "" frameborder="0">
 		          </iframe>
 		          <!-- End Map -->
 				</div>
@@ -170,6 +164,8 @@
 			<% end %>
 	</div>
 </div>
+
+<%= partial 'partials/product-calltoaction' %>
 
 <%= partial 'partials/calltoaction' %>
 
