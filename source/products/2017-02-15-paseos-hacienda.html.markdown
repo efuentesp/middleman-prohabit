@@ -14,26 +14,29 @@ bathrooms: 1
 m2: De ?? a ??
 land:
 garages: 1
-main_image: san-rafael/exterior2.jpg
+main_image: paseos-hacienda/exterior1.jpg
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
-  - img: san-rafael/exterior2.jpg
+  - img: paseos-hacienda/exterior1.jpg
     title: Exterior
     description:
-  - img: san-rafael/sala-comedor1.jpg
+  - img: paseos-hacienda/flyer1.jpg
+    title: Exterior
+    description:
+  - img: paseos-hacienda/cocina1.jpg
+    title: Cocina
+    description:
+  - img: paseos-hacienda/plano1.jpg
+    title: Plano
+    description:
+  - img: paseos-hacienda/sala-comedor1.jpg
     title: Sala-Comedor
     description:
-  - img: san-rafael/exterior3.jpg
-    title: Exterior
+  - img: paseos-hacienda/flyer2.jpg
+    title: Propaganda
     description:
-  - img: san-rafael/plano1.jpg
-    title: Plano
-    description:
-  - img: san-rafael/plano2.jpg
-    title: Plano
-    description:
-  - img: san-rafael/exterior1.jpg
-    title: Exterior
+  - img: paseos-hacienda/recamara1.jpg
+    title: Recamara
     description:
 ---
 

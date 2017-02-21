@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="calltoaction-wrapper">
-					<h3>¿Te gustó la vivienda y te gustaria verla?</h3>
+					<h3>¿Te interesó la vivienda y te gustaria verla?</h3>
 					<h4>Solicita una visita aquí.</h4><br/>
 					<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Solicitud para visitar: '+current_page.data.title, :body => 'Favor de agendar visita a la vivienda: '+current_page.data.title+'.' }, :class => 'btn btn-success' do %>
 						<i class="fa fa-envelope" aria-hidden="true"></i> Agendar Visita

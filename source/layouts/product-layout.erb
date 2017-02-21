@@ -145,6 +145,12 @@
 		<br/>
 		<div class="row">
 			<h2><i class="fa fa-camera" aria-hidden="true"></i> Imágenes</h2>
+      <ul class="photos-slider">
+        <% current_page.data.photos.each do |photo| %>
+          <li><%= image_tag(photo.img, title: photo.title, alt: photo.title) %></li>
+        <% end %>
+      </ul>
+
 			<% current_page.data.photos.each do |photo| %>
 			<div class="col-md-6 col-sm-6">
 				<div class="portfolio-item">
