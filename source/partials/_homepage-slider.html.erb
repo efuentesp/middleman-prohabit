@@ -10,7 +10,7 @@
           <!-- Slide Text -->
           <h3 class="subtitle"><%= product.data.description %></h3>
           <!-- Slide Image -->
-          <%= image_tag(product.data.main_image, alt: product.title, :class => 'slide-img') %>
+          <%= image_tag(product.data.main_image, alt: product.title, resize_to: '450x280', :class => 'slide-img') %>
         </li>
         <!-- End Slide -->    
       <% end %>

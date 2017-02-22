@@ -19,19 +19,22 @@ title: Contáctanos
         <h2><%= data.contact.long_name %></h2>
         <div class="col-sm-7">
           <!-- Map -->
-          <iframe src="//www.google.com/maps/embed/v1/place?q=<%= data.contact.googlemaps_place %>
-            &zoom=16
-            &key= <%= data.contact.googlemaps_key %>"
-            width="650" height="350"
-            style="border:0" scrolling: "no" allowfullscreen: "" frameborder="0">
-          </iframe>
+          <!-- Map -->
+          <% link_to data.contact.googlemaps_url, :target => "_blank" do %>
+            <%= image_tag(data.contact.mapimage, resize_to: '650x350', alt: "data.contact.address") %>
+          <% end %>
           <!-- End Map -->
+          <% link_to data.contact.googlemaps_url, :target => "_blank", :class => 'btn btn-default' do %>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> ¿Cómo llego?
+          <% end %>
         </div>
         <div class="col-sm-5">
           <!-- Contact Info -->
           <p class="contact-us-details">
             <b><i class="fa fa-map-marker"></i> Dirección:</b><br/>
-            <%= data.contact.address1 %>.<br/>
+            <% link_to data.contact.googlemaps_url, :target => "_blank" do %>
+              <%= data.contact.address1 %><br/>
+            <% end %>
             <%= data.contact.address2 %><br/>
             <%= data.contact.city %><br/><br/>
             <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %><br/>

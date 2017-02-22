@@ -5,7 +5,7 @@ tags:
 category: Venta
 description: Fraccionamiento privado exclusivo de solo 10 casas, totalmente cerrado con Portón Eléctrico. Casas Unifamiliares de 1 y 2 plantas; 2 y 3 recámaras, ¡con opción a ampliarse a 3 recámaras!. Todas con Calentador de Paso de recuperación rápida; Jardín y Patio de Servicio. Con instalaciones de luz, agua y drenaje subterraneas; alumbrado público y calles adoquinadas. Ubicadas en calle San Gregorio Aztotoacan, El Verde Puebla. Frente a la Secundaria Técnica y Centro de Salud.
 status: Disponible
-price: De $549,000 a $899,000
+price: Desde $549,000 hasta $899,000
 address: San Gregorio Aztotoacan
 city: El Verde, Puebla
 type: Casas Nuevas
@@ -15,8 +15,14 @@ m2: De 70 a 140
 land: 10 x 10
 garages: 1
 main_image: villas-los-volcanes/p1-exterior2.jpg
+mapimage: villas-los-volcanes/mapa.png
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/San+Gregorio+Aztotoacan,+Puebla,+M%C3%A9xico/@19.2694245,-98.462152,14z/data=!4m14!4m13!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355383!2d19.2828888!1m5!1m1!1s0x85ce2ca60751f213:0xb2cbe281fe036f4b!2m2!1d-98.4942933!2d19.2716494!3e0?hl=es_MX"
+googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
+  - img: villas-los-volcanes/p1-exterior2.jpg
+    title: Exterior (Casa de una planta)
+    description:
   - img: villas-los-volcanes/p1-bano1.jpg
     title: Baño (Casa de una planta)
     description:
@@ -24,9 +30,6 @@ photos:
     title: Cocina (Casa de una planta)
     description:
   - img: villas-los-volcanes/p1-exterior1.jpg
-    title: Exterior (Casa de una planta)
-    description:
-  - img: villas-los-volcanes/p1-exterior2.jpg
     title: Exterior (Casa de una planta)
     description:
   - img: villas-los-volcanes/p1-recamara1.jpg

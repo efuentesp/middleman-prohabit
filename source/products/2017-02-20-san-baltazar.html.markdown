@@ -15,6 +15,9 @@ m2: de 48 a 52
 land: 7.5 x 10
 garages: 1
 main_image: san-baltazar/fachada1.jpg
+mapimage: san-baltazar/mapa.png
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/Calle+Miguel+Hidalgo+105,+San+Francisco+Tepeyecac,+Pue.,+M%C3%A9xico/@19.2637913,-98.4407932,14z/data=!4m14!4m13!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355383!2d19.2828888!1m5!1m1!1s0x85cfd309db07cd17:0x8266f1314bc95fdf!2m2!1d-98.4407619!2d19.246992!3e0?hl=es_MX"
+googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
   - img: san-baltazar/fachada1.jpg

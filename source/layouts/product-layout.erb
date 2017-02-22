@@ -50,7 +50,11 @@
 							</tr>
 							<tr>
 								<td><strong>DIRECCION</strong></td>
-								<td><%= current_page.data.address %></td>
+								<td>
+									<% link_to current_page.data.googlemaps_url, :target => "_blank", :class => 'btn btn-link' do %>
+										<i class="fa fa-map-marker" aria-hidden="true"></i> <%= current_page.data.address %>
+									<% end %>
+								</td>
 							</tr>
 							<tr>
 								<td><strong>CIUDAD</strong></td>
@@ -117,13 +121,14 @@
 				<!-- Location -->
 				<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
 				<div class="col-sm-12">
-		          <!-- Map -->
-		          <iframe src="//www.google.com/maps/embed/v1/directions?origin=<%= data.contact.googlemaps_place %>&destination=<%= current_page.data.googlemaps_place %>
-		            &key= <%= data.contact.googlemaps_key %>"
-		            width="530" height="350"
-		            style="border:0" scrolling: "no" allowfullscreen: "" frameborder="0">
-		          </iframe>
-		          <!-- End Map -->
+					<!-- Map -->
+					<% link_to current_page.data.googlemaps_url, :target => "_blank" do %>
+						<%= image_tag(current_page.data.mapimage, resize_to: '530x350', alt: "current_page.data.address") %>
+					<% end %>
+					<!-- End Map -->
+					<% link_to current_page.data.googlemaps_url, :target => "_blank", :class => 'btn btn-default' do %>
+						<i class="fa fa-map-marker" aria-hidden="true"></i> ¿Cómo llego?
+					<% end %>
 				</div>
 				<!-- End Location -->
 			</div>
@@ -131,8 +136,7 @@
 		</div>
 </div>
 
-<%= partial 'partials/product-calltoaction' %>
-
+<br/>
 <%= partial 'partials/calltoaction' %>
 
 <div class="section">

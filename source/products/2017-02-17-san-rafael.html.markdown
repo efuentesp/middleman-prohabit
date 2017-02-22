@@ -15,6 +15,9 @@ m2: De 68 a 88
 land: 5 x 10
 garages: 1
 main_image: san-rafael/exterior2.jpg
+mapimage: san-rafael/mapa.png
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/Emiliano+Zapata+49,+Morelos,+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+M%C3%A9xico/@19.2854566,-98.4370933,16.45z/data=!4m15!4m14!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355383!2d19.2828888!1m5!1m1!1s0x85cfd47d198a925b:0xb496d557ce56c06!2m2!1d-98.4382074!2d19.2882897!3e0!5i1?hl=es_MX"
+googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
   - img: san-rafael/exterior2.jpg

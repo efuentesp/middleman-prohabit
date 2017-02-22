@@ -19,7 +19,9 @@
         <h3>Contáctanos</h3>
         <p class="contact-us-details">
             <b><i class="fa fa-map-marker"></i> Dirección:</b><br/>
-            <%= data.contact.address1 %><br/>
+            <% link_to data.contact.googlemaps_url, :target => "_blank" do %>
+              <%= data.contact.address1 %><br/>
+            <% end %>
             <%= data.contact.address2 %><br/>
             <%= data.contact.city %><br/><br/>
             <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %><br/>

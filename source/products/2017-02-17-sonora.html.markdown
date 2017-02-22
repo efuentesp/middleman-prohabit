@@ -15,6 +15,8 @@ m2: 48
 land: 6 x 12
 garages: 1
 main_image: sonora/fachada1.jpg
+mapimage: sonora/mapa.png
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/Calle+H,+Texalhuacan,+San+Rafael+Tlanalapan,+Pue.,+Mexico/@19.2802829,-98.4473827,15.54z/data=!4m15!4m14!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355383!2d19.2828888!1m5!1m1!1s0x85cfd4995faa6925:0x2a246f288fe1a476!2m2!1d-98.45697!2d19.2846552!3e0!5i2?hl=es_MX"
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
   - img: sonora/fachada1.jpg

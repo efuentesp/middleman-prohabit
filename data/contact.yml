@@ -24,4 +24,6 @@ linkedin: prohabit.snmartin
 
 # Google Maps
 googlemaps_place: Pro+Habit
+mapimage: mapa-prohabit.png
+googlemaps_url: "https://www.google.com/maps/place/Pro+Habit/@19.2830818,-98.4371405,17z/data=!4m5!3m4!1s0x0:0x8a28464b753525fb!8m2!3d19.283254!4d-98.4371194?hl=en-US"
 googlemaps_key:  AIzaSyArdn7OWNq-SZyprxVJou3S0hFex-Dk4j8
