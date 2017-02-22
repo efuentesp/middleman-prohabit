@@ -9,7 +9,7 @@
           <div class="portfolio-item">
             <div class="portfolio-image">
             <% link_to product.url do %>
-              <%= image_tag(product.data.main_image, alt: product.title) %>
+              <%= image_tag(product.data.main_image, resize_to: '768x480', alt: product.title) %>
             <% end %>
             </div>
           </div>
@@ -30,7 +30,7 @@
                 <span class="label label-default"><i class="fa fa-home"></i> <%= product.data.m2 %> m<sup>2</sup></span>
                 <span class="label label-default"><i class="fa fa-bed"></i> <%= product.data.bedrooms %></span>
                 <span class="label label-default"><i class="fa fa-shower"></i> <%= product.data.bathrooms %></span>
-                <span class="label label-default"><i class="fa fa-car"></i> <%= product.data.garages %></span>   
+                <span class="label label-default"><i class="fa fa-car"></i> <%= product.data.garages %></span>
               </div>
               <div class="col-md-4">
                 <% link_to product.url, :class => 'btn btn-warning' do %>

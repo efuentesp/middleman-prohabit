@@ -8,9 +8,10 @@
 //= require template
 
 $(document).ready(function(){
-  $('.photos-slider').bxSlider({
+  $('.bx-photos-slider').bxSlider({
     auto: true,
     mode: 'fade',
-    captions: true
+    captions: true,
+    pagerCustom: '#bx-photos-pager'
   });
 });

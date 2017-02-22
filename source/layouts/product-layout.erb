@@ -19,34 +19,20 @@
 		<div class="row">
 			<!-- Product Image & Available Colors -->
 			<div class="col-sm-7">
-				<div class="portfolio-item">
-					<div class="portfolio-image">
-						<% link_to '#' do %>
-							<%= image_tag(current_page.data.main_image, alt: current_page.data.title) %>
-						<% end %>
-					</div>
-					<div class="portfolio-info-fade">
-						<ul>
-							<li class="portfolio-project-name"><%= current_page.data.title %> (<%= current_page.data.price %>)</li>
-							<li><%= truncate(current_page.data.description, :length => 550) %></li>
-							<li>
-								<i class="fa fa-home"></i>: <%= current_page.data.m2 %> m<sup>2</sup>
-								-
-								<i class="fa fa-bed"></i>: <%= current_page.data.bedrooms %>
-								-
-								<i class="fa fa-shower"></i>: <%= current_page.data.bathrooms %>
-								-
-								<i class="fa fa-car"></i>: <%= current_page.data.garages %>
-							</li>
-							<li class="portfolio-visit-btn">
-								<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Solicitud para visitar: '+current_page.data.title, :body => 'Favor de agendar visita a la vivienda: '+current_page.data.title+'.' }, :class => 'btn' do %>
-									<i class="fa fa-envelope" aria-hidden="true"></i> Agendar Visita
-								<% end %>
-							</li>
-						</ul>
-					</div>
-				</div>
-
+        <div>
+          <ul class="bx-photos-slider">
+            <% current_page.data.photos.each do |photo| %>
+              <li><%= image_tag(photo.img, resize_to: '652x480', title: photo.title, alt: photo.title) %></li>
+            <% end %>
+          </ul>
+          <div id="bx-photos-pager">
+            <% current_page.data.photos.each_with_index do |photo, index| %>
+              <a data-slide-index=<%= index %> href="">
+                <%= image_tag(photo.img, resize_to: '78x78', alt: photo.title) %>
+              </a>
+            <% end %>
+          </div>
+        </div>
 			</div>
 			<!-- End Product Image & Available Colors -->
 			<!-- Product Summary & Options -->
@@ -107,6 +93,7 @@
 			</div>
 			<!-- End Product Summary & Options -->
 		</div>
+    <br/>
 		<div class="row">
 			<!-- Product Image & Available Colors -->
 			<div class="col-sm-12">
@@ -142,33 +129,6 @@
 			</div>
 			<!-- End Full Description & Specification -->
 		</div>
-		<br/>
-		<div class="row">
-			<h2><i class="fa fa-camera" aria-hidden="true"></i> Imágenes</h2>
-      <ul class="photos-slider">
-        <% current_page.data.photos.each do |photo| %>
-          <li><%= image_tag(photo.img, title: photo.title, alt: photo.title) %></li>
-        <% end %>
-      </ul>
-
-			<% current_page.data.photos.each do |photo| %>
-			<div class="col-md-6 col-sm-6">
-				<div class="portfolio-item">
-					<div class="portfolio-image">
-						<% link_to '#' do %>
-							<%= image_tag(photo.img, alt: photo.title) %>
-						<% end %>
-					</div>
-					<div class="portfolio-info-fade">
-						<ul>
-							<li class="portfolio-project-name"><%= photo.title %></li>
-							<li><%= photo.description %></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<% end %>
-	</div>
 </div>
 
 <%= partial 'partials/product-calltoaction' %>

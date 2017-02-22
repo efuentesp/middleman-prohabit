@@ -14,7 +14,7 @@ bathrooms: 1 y 1.5
 m2: De 70 a 140
 land: 10 x 10
 garages: 1
-main_image: villas-los-volcanes/p2-exterior1.jpg
+main_image: villas-los-volcanes/p1-exterior2.jpg
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 photos:
   - img: villas-los-volcanes/p1-bano1.jpg

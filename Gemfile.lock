@@ -104,9 +104,13 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-simple-thumbnailer (1.2.0)
+      middleman-core (~> 4)
+      mini_magick (~> 4)
     middleman-sprockets (4.1.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
+    mini_magick (4.6.1)
     minitest (5.10.1)
     multi_json (1.12.1)
     padrino-helpers (0.13.3.3)
@@ -147,6 +151,7 @@ DEPENDENCIES
   middleman-blog
   middleman-compass (>= 4.0.0)
   middleman-livereload
+  middleman-simple-thumbnailer
   middleman-sprockets (>= 4.0.0)
   tzinfo-data
   wdm (~> 0.1.0)
