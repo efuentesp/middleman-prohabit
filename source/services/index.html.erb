@@ -16,12 +16,14 @@ title: Servicios que ofrecemos
 <!-- End Page Title -->
 
 <!-- Call to Action Bar -->
-<div class="section section-white">
+<div class="section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="calltoaction-wrapper">
-					<h4><%= data.contact.long_name %> es una empresa que tiene como objetivo el promover la venta de casas y departamentos habitacionales, brindando la asesoría y el apoyo necesario a las personas que quieren adquirir algún bien, con seguridad y conforme a las expectativas que estas personas y su familia tienen.<br/><br/>Buscamos y Comercializamos con Constructoras y Desarrolladoras que cuenten con viviendas pensadas en tus necesidades, tales como Ubicación, Seguridad, Comodidad y Precio.</h4><br/>
+				<div class="jumbotron">
+					<p class="text-justify">
+						<strong><%= data.contact.long_name %></strong> es una empresa que tiene como objetivo el promover la venta de casas y departamentos habitacionales, brindando la asesoría y el apoyo necesario a las personas que quieren adquirir algún bien, con seguridad y conforme a las expectativas que estas personas y su familia tienen.<br/><br/>Buscamos y Comercializamos con Constructoras y Desarrolladoras que cuenten con viviendas pensadas en tus necesidades, tales como Ubicación, Seguridad, Comodidad y Precio.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -29,5 +31,132 @@ title: Servicios que ofrecemos
 </div>
 <!-- End Call to Action Bar -->
 
-<%= partial 'partials/services' %>
-<%= partial 'partials/calltoaction' %>
+        <div class="section">
+	        <div class="container">
+	        	<div class="row service-wrapper-row">
+        			<div class="col-md-12">
+						<h2>Asesoria sin costo de Créditos: INFONAVIT, FOVISSSTE o Bancarios</h2>
+						<h4>Te asesoramos en el tramite de crédito para tu vivienda, tramitamos los créditos de vivienda para la adquisición de bienes inmuebles de acuerdo a la normatividad vigente.</h4>
+        			</div>
+				</div>
+
+        		<div class="row service-wrapper-row">
+        			<div class="col-sm-2">
+        				<div>
+        					<% link_to "http://www.infonavit.org.mx", :target => '_blank' do %>
+        					<%= image_tag("service-icon/infonavit.png", alt: "Crédito INFONAVT") %>
+        					<% end %>
+        				</div>
+        			</div>
+        			<div class="col-sm-10">
+    					<h3>Crédito INFONAVIT</h3>
+    					<p class="text-justify">
+    						A veces, decidir cuál te conviene más puede ser un proceso complicado ya que debes tomar en cuenta muchos elementos como son: dónde vives actualmente, la ubicación de tu trabajo, de tu familia cercana, el ahorro que tienes en tu subcuenta, tus planes, etc. Nosotros te apoyamos a que tomes una mejor decisión. Una buena decisión elevará tu calidad de vida, ayudará a cuidar tu patrimonio y el de tu familia.
+    					</p>
+						<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para solicitar Credito de Vivienda', :body => 'Necesito ayuda para solicitar un crédito de Infonavit.' }, :class => 'btn btn-info' do %>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
+						<% end %>
+    					<% link_to 'http://portal.infonavit.org.mx/wps/wcm/connect/infonavit/trabajadores/precalificacion_y_puntos/precalificacion_y_puntos', :class => 'btn btn-default', :target => '_blank' do %>
+    						<i class="fa fa-calculator" aria-hidden="true"></i> Simulador de Crédito
+    					<% end %>
+    				</div>
+        		</div>
+        		<div class="row service-wrapper-row">
+        			<div class="col-sm-2">
+        				<div>
+        					<% link_to "http://www.fovissste.gob.mx/es/FOVISSSTE/Creditos_Hipotecarios", :target => '_blank' do %>
+        						<%= image_tag("service-icon/fovissste.png", alt: "Crédito FOVISSSTE") %>
+        					<% end %>
+        				</div>
+        			</div>
+        			<div class="col-sm-10">
+    					<h3>Crédito FOVISSSTE</h3>
+    					<p class="text-justify">
+    						FOVISSSTE tiene diversas opciones de crédito pensadas en las necesidades de cada trabajador. Más allá del Crédito Tradicional, hoy se cuenta con una amplia gama de modalidades que no dependen de un sorteo para construir un patrimonio. Te invitamos a conocerlas para tomar la mejor decisión. 
+    					</p>
+    					<p class="text-justify">
+    						El Crédito Tradicional se puede utilizar para adquirir vivienda nueva o usada y está diseñado para los trabajadores en activo de base, confianza y eventuales al servicio de entidades públicas del Estado y que aporten al FOVISSSTE.
+    					</p>
+						<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para solicitar Credito de Vivienda', :body => 'Necesito ayuda para solicitar un crédito de FOVISSSTE.' }, :class => 'btn btn-info' do %>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
+						<% end %>
+    					<% link_to 'https://www.gob.mx/fovissste/acciones-y-programas/simuladores-de-creditos-fovissste', :class => 'btn btn-default', :target => '_blank' do %>
+    						<i class="fa fa-calculator" aria-hidden="true"></i> Simulador de Crédito
+    					<% end %>
+    				</div>
+        		</div>
+				<div class="row service-wrapper-row">
+        			<div class="col-sm-2">
+        				<div>
+        					<%= image_tag("service-icon/bank.png", alt: "Crédito Bancario") %>
+        				</div>
+        			</div>
+        			<div class="col-sm-10">
+    					<h3>Crédito Hipotecario Bancario</h3>
+    					<p class="text-justify">
+    						Te ayudamos a elegir el mejor crédito hipotecario que se adapte a tus necesidades. Visita nuestra oficina y recibe la asesoría que mereces para solicitar tu crédito. Las condiciones definitivas del crédito estarán en función del análisis que realice banco.
+    					</p>
+						<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para solicitar Credito de Vivienda', :body => 'Necesito ayuda para solicitar un crédito de hipotecario a través de un banco.' }, :class => 'btn btn-info' do %>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
+						<% end %>
+    					<% link_to 'https://phpapps.condusef.gob.mx/condusefhipotecario/datos.php', :class => 'btn btn-default', :target => '_blank' do %>
+    						<i class="fa fa-calculator" aria-hidden="true"></i> Simulador de Crédito
+    					<% end %>
+    				</div>
+
+				</div>
+
+	        	<div class="row service-wrapper-row">
+        			<div class="col-md-12">
+						<h2>Venta de Desarrollos Inmobiliarios</h2>
+						<h4>Nuestro conocimiento en el mercado y la experiencia en el campo inmobiliario, nos permiten identificar potenciales compradores de sus inmuebles, con el propósito de celebrar el mejor negocio comercial.</h4>
+						<div class="col-md-4">
+	        				<div class="service-image">
+	        					<img src="images/desarrollo-inmobiliario.jpg" alt="Venta de Desarrollos Inmobiliarios">
+	        				</div>
+						</div>
+						<div class="col-md-8">
+							<p class="text-justify">
+								Nosotros en <strong><%= data.contact.long_name %></strong>, contamos con amplia experiencia vendiendo desarrollos en la zona de San Martín Texmelucan, Puebla. Así también contamos con una extensa lista de posibles compradores a quienes se les apoya con la tramitación de sus creditos, de manera que la venta se concrete en el menor tiempo posible.
+							</p>
+							<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para vender un desarrollo inmobiliario', :body => 'Necesito ayuda para la venta de un desarrollo inmobiliario.' }, :class => 'btn btn-info' do %>
+								<i class="fa fa-envelope" aria-hidden="true"></i> Contáctanos
+							<% end %>
+						</div>
+        			</div>
+				</div>
+	        	<div class="row service-wrapper-row">
+        			<div class="col-md-12">
+						<h2>Venta de sus Inmuebles</h2>
+						<h4>¿Tienes una casa, departamento, bodega o terreno que quieras vender?, nosotros te ayudamos.</h4>
+						<div class="col-md-4">
+	        				<div class="service-image">
+	        					<img src="images/casa-vendida.jpg" alt="Venta de sus Inmuebles">
+	        				</div>
+						</div>
+						<div class="col-md-8">
+						<p>
+							<strong>Vende tu propiedad al mejor precio y en el menor tiempo posible.</strong>
+						</p>
+						<p class="text-justify">
+							Si usted quiere vender su casa, departamento o cualquier tipo de inmueble es recomendable que cuente con los servicios de un asesor inmobiliario que lo oriente profesionalmente en todo lo que implica el proceso de venta de inmuebles.
+						</p>
+						<p class="text-justify">
+							Contáctenos y un profesional especializado lo visitará sin costo alguno para conocer sus necesidades en materia inmobiliaria y hacer de su conocimiento las estrategias que puedan satisfacer dichas necesidades.
+						</p>
+						<p class="text-justify">
+							Gracias a los convenios celebrados con Instituciones Financieras estamos en posibilidad de ofrecer Crédito Hipotecario, incrementando así en forma sustancial nuestra cartera de compradores potenciales, lo que hará que la venta de su casa sea más rápida.
+						</p>
+						<p class="text-justify">
+							Ayudamos a cerrar la operación en forma oportuna. Asesoramos al propietario respecto al contrato que debe firmar y las cláusulas que debe contener, verificando que cubra todos los elementos que debe llevar toda la operación de compra-venta para quedar legalmente protegido. Supervisamos del proceso de escrituración con el notario designado para terminar en forma óptima el proceso de venta hasta la firma de las escrituras de compra-venta correspondientes.
+						</p>
+						<% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para vender mi casa', :body => 'Necesito ayuda para vender mi casa.' }, :class => 'btn btn-info' do %>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
+						<% end %>
+
+						</div>
+        			</div>
+				</div>
+	        </div>
+	    </div>
+
