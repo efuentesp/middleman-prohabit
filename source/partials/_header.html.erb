@@ -3,6 +3,39 @@
   <div class="container">
 
     <div class="menuextras">
+      <div class="extras">
+        <ul>
+          <li>
+            <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %>
+          </li>
+          <li>
+            <b><i class="fa fa-mobile"></i> Celular:</b> <%= data.contact.mobile %>
+          </li>
+          <li>
+            <b><i class="fa fa-whatsapp"></i> WhatsApp:</b> <%= data.contact.whatsapp %>
+          </li>
+          <li>
+            <% link_to 'https://www.facebook.com/'+data.contact.facebook, :title => 'Facebook' do %>
+              <i class="fa fa-facebook-official"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://twitter.com/'+data.contact.twitter, :title => 'Twitter' do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://www.linkedin.com/company/'+data.contact.linkedin, :title => 'Linkedin' do %>
+              <i class="fa fa-linkedin"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://www.youtube.com/user/'+data.contact.youtube, :title => 'Youtube' do %>
+              <i class="fa fa-youtube-play"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <nav id="mainmenu" class="mainmenu">

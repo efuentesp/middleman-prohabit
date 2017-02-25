@@ -7,6 +7,7 @@ services:
     subservices:
       - name: Crédito INFONAVIT
         image: service-icon/infonavit.png
+        href: "http://www.infonavit.org.mx"
         description: "A veces, decidir cuál te conviene más puede ser un proceso complicado ya que debes tomar en cuenta muchos elementos como son: dónde vives actualmente, la ubicación de tu trabajo, de tu familia cercana, el ahorro que tienes en tu subcuenta, tus planes, etc. Nosotros te apoyamos a que tomes una mejor decisión. Una buena decisión elevará tu calidad de vida, ayudará a cuidar tu patrimonio y el de tu familia."
         links:
           - name: Simulador de Crédito
@@ -14,6 +15,7 @@ services:
             href: "http://portal.infonavit.org.mx/wps/wcm/connect/infonavit/trabajadores/precalificacion_y_puntos/precalificacion_y_puntos"
       - name: Crédito FOVISSSTE
         image: service-icon/fovissste.png
+        href: "http://www.fovissste.gob.mx/es/FOVISSSTE/Creditos_Hipotecarios"
         description: "FOVISSSTE tiene diversas opciones de crédito pensadas en las necesidades de cada trabajador. Más allá del Crédito Tradicional, hoy se cuenta con una amplia gama de modalidades que no dependen de un sorteo para construir un patrimonio. Te invitamos a conocerlas para tomar la mejor decisión.<br/>El Crédito Tradicional se puede utilizar para adquirir vivienda nueva o usada y está diseñado para los trabajadores en activo de base, confianza y eventuales al servicio de entidades públicas del Estado y que aporten al FOVISSSTE."
         links:
           - name: Simulador de Crédito
@@ -21,6 +23,7 @@ services:
             href: "https://www.gob.mx/fovissste/acciones-y-programas/simuladores-de-creditos-fovissste"
       - name: Crédito Hipotecario Bancario
         image: service-icon/bank.png
+        href: "#"
         description: "Te ayudamos a elegir el mejor crédito hipotecario que se adapte a tus necesidades. Visita nuestra oficina y recibe la asesoría que mereces para solicitar tu crédito. Las condiciones definitivas del crédito estarán en función del análisis que realice banco."
         links:
           - name: Simulador de Crédito
@@ -28,8 +31,21 @@ services:
             href: "https://phpapps.condusef.gob.mx/condusefhipotecario/datos.php"
   - name: "Venta de Desarrollos Inmobiliarios"
     description: "Nuestro conocimiento en el mercado y la experiencia en el campo inmobiliario, nos permiten identificar potenciales compradores de sus inmuebles, con el propósito de celebrar el mejor negocio comercial."
+    subservices:
+      - name: "Vende tu propiedad al mejor precio y en el menor tiempo posible."
+        image: desarrollo-inmobiliario.jpg
+        href: "#"
+        description: "Nosotros en <strong>ProHabit San Martín</strong>, contamos con amplia experiencia vendiendo desarrollos en la zona de San Martín Texmelucan, Puebla. Así también contamos con una extensa lista de posibles compradores a quienes se les apoya con la tramitación de sus creditos, de manera que la venta se concrete en el menor tiempo posible."
   - name: "Venta de sus Inmuebles"
     description: "¿Tienes una casa, departamento, bodega o terreno que quieras vender?, nosotros te ayudamos."
+    subservices:
+      - name: "Vende tu propiedad al mejor precio y en el menor tiempo posible."
+        image: casa-vendida.jpg
+        href: "#"
+        description: "Si usted quiere vender su casa, departamento o cualquier tipo de inmueble es recomendable que cuente con los servicios de un asesor inmobiliario que lo oriente profesionalmente en todo lo que implica el proceso de venta de inmuebles.<br/>Contáctenos y un profesional especializado lo visitará sin costo alguno para conocer sus necesidades en materia inmobiliaria y hacer de su conocimiento las estrategias que puedan satisfacer dichas necesidades.<br/>Gracias a los convenios celebrados con Instituciones Financieras estamos en posibilidad de ofrecer Crédito Hipotecario, incrementando así en forma sustancial nuestra cartera de compradores potenciales, lo que hará que la venta de su casa sea más rápida.<br/>Ayudamos a cerrar la operación en forma oportuna. Asesoramos al propietario respecto al contrato que debe firmar y las cláusulas que debe contener, verificando que cubra todos los elementos que debe llevar toda la operación de compra-venta para quedar legalmente protegido. Supervisamos del proceso de escrituración con el notario designado para terminar en forma óptima el proceso de venta hasta la firma de las escrituras de compra-venta correspondientes."
+mail:
+  subject: "Solicitud de ayuda"
+  body: "Favor de contactarme a este correo para darme más información de sus servicios."
 ---
 
 <!-- Page Title -->
@@ -66,33 +82,37 @@ services:
     	<div class="row service-wrapper-row">
   			<div class="col-md-12">
   		    <h2><%= service.name %></h2>
-					<h4><%= service.description %></h4>
+			<h4><%= service.description %></h4>
         </div>
-        <% service.subservices.each do |subservice| %>
-          <div class="row service-wrapper-row">
-            <div class="col-sm-2">
-              <div>
-                <% link_to '#', :target => '_blank' do %>
-                <%= image_tag(subservice.image, alt: subservice.name) %>
-                <% end %>
-              </div>
-            </div>
-            <div class="col-sm-10">
-              <h3><%= subservice.name %></h3>
-              <p class="text-justify">
-                <%= subservice.description %>
-              </p>
-              <% link_to 'mailto:'+data.contact.email, :query => { :subject => 'Ayuda para solicitar Credito de Vivienda', :body => 'Necesito ayuda para solicitar un crédito de Infonavit.' }, :class => 'btn btn-info' do %>
-                <i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
-              <% end %>
-              <% subservice.links.each do |link| %>
-                <% link_to link.href, :class => 'btn btn-default', :target => '_blank' do %>
-                  <i class=link.icon aria-hidden="true"></i> link.name
-                <% end %>
-              <% end %>
-            </div>
-  			  </div>
-        <% end %>
+		<% if service.subservices %>
+	        <% service.subservices.each do |subservice| %>
+	          <div class="row service-wrapper-row">
+	            <div class="col-sm-3">
+	              <div>
+	                <% link_to subservice.href, :target => '_blank' do %>
+	                <%= image_tag(subservice.image, resize_to: '288x165', alt: subservice.name, :class => 'service-image') %>
+	                <% end %>
+	              </div>
+	            </div>
+	            <div class="col-sm-9">
+	              <h3><%= subservice.name %></h3>
+	              <p class="text-justify">
+	                <%= subservice.description %>
+	              </p>
+	              <% link_to 'mailto:'+data.contact.email, :query => { :subject => current_page.data.mail.subject, :body => current_page.data.mail.body }, :class => 'btn btn-info' do %>
+	                <i class="fa fa-envelope" aria-hidden="true"></i> Solicitar ayuda
+	              <% end %>
+	              <% if subservice.links %>
+		              <% subservice.links.each do |link| %>
+		                <% link_to link.href, :class => 'btn btn-default', :target => '_blank' do %>
+		                  <i class=link.icon aria-hidden="true"></i> <%= link.name %>
+		                <% end %>
+		              <% end %>
+	              <% end %>
+	            </div>
+	  		  </div>
+			<% end %>
+		<% end %>
       </div>
     </div>
   </div>
