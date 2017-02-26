@@ -6,6 +6,9 @@
       <div class="extras">
         <ul>
           <li>
+            <b><i class="fa fa-envelope-o"></i> Email:</b> <%= mail_to data.contact.email, data.contact.email %>
+          </li>
+          <li>
             <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %>
           </li>
           <li>
@@ -16,22 +19,22 @@
           </li>
           <li>
             <% link_to 'https://www.facebook.com/'+data.contact.facebook, :title => 'Facebook' do %>
-              <i class="fa fa-facebook-official"></i>
+              <i class="fa fa-facebook-official"></i> Facebook
             <% end %>
           </li>
           <li>
             <% link_to 'https://twitter.com/'+data.contact.twitter, :title => 'Twitter' do %>
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-twitter"></i> Twitter
             <% end %>
           </li>
           <li>
             <% link_to 'https://www.linkedin.com/company/'+data.contact.linkedin, :title => 'Linkedin' do %>
-              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-linkedin"></i> Linkedin
             <% end %>
           </li>
           <li>
             <% link_to 'https://www.youtube.com/user/'+data.contact.youtube, :title => 'Youtube' do %>
-              <i class="fa fa-youtube-play"></i>
+              <i class="fa fa-youtube-play"></i> Youtube
             <% end %>
           </li>
         </ul>
@@ -42,11 +45,12 @@
       <ul>
         <li class="logo-wrapper">
           <% link_to '/' do %>
-            <%= image_tag("logo_40x40.png", alt: data.contact.short_name) %>
+            <%= image_tag("logo_mini.png", resize_to: '80x80', alt: data.contact.short_name) %>
           <% end %>
+          <br/>
         </li>
         <li class="active">
-          <%= link_to data.contact.short_name.upcase, '/' %>
+          <%= link_to data.contact.short_name, '/' %>
         </li>
         <li>
           <%= link_to 'Viviendas', '/properties' %>

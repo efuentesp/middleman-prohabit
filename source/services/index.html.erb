@@ -4,6 +4,7 @@ description: "es una empresa que tiene como objetivo el promover la venta de cas
 services:
   - name: "Asesoria sin costo de Créditos: INFONAVIT, FOVISSSTE o Bancarios"
     description: "Te asesoramos en el tramite de crédito para tu vivienda, tramitamos los créditos de vivienda para la adquisición de bienes inmuebles de acuerdo a la normatividad vigente."
+    tag: creditos
     subservices:
       - name: Crédito INFONAVIT
         image: service-icon/infonavit.png
@@ -31,13 +32,15 @@ services:
             href: "https://phpapps.condusef.gob.mx/condusefhipotecario/datos.php"
   - name: "Venta de Desarrollos Inmobiliarios"
     description: "Nuestro conocimiento en el mercado y la experiencia en el campo inmobiliario, nos permiten identificar potenciales compradores de sus inmuebles, con el propósito de celebrar el mejor negocio comercial."
+    tag: desarrollos
     subservices:
-      - name: "Vende tu propiedad al mejor precio y en el menor tiempo posible."
+      - name: "Vende tu Desarrollo Inmobiliario en el menor tiempo posible."
         image: desarrollo-inmobiliario.jpg
         href: "#"
         description: "Nosotros en <strong>ProHabit San Martín</strong>, contamos con amplia experiencia vendiendo desarrollos en la zona de San Martín Texmelucan, Puebla. Así también contamos con una extensa lista de posibles compradores a quienes se les apoya con la tramitación de sus creditos, de manera que la venta se concrete en el menor tiempo posible."
   - name: "Venta de sus Inmuebles"
     description: "¿Tienes una casa, departamento, bodega o terreno que quieras vender?, nosotros te ayudamos."
+    tag: inmuebles
     subservices:
       - name: "Vende tu propiedad al mejor precio y en el menor tiempo posible."
         image: casa-vendida.jpg
@@ -65,10 +68,15 @@ mail:
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="jumbotron">
-					<p class="text-justify">
-						<strong><%= data.contact.long_name %></strong> <%= current_page.data.description %>
-					</p>
+				<div class="">
+          <div class="col-md-3">
+            <%= image_tag("logo.png", resize_to: '240x240', alt: data.contact.short_name) %>
+          </div>
+          <div class="col-md-9">
+  					<p class="text-justify">
+  						<strong><%= data.contact.long_name %></strong> <%= current_page.data.description %>
+  					</p>
+          </div>
 				</div>
 			</div>
 		</div>
@@ -77,14 +85,14 @@ mail:
 <!-- End Call to Action Bar -->
 
 <% current_page.data.services.each do |service| %>
-  <div class="section">
+  <div class="section" id="<%=  service.tag %>">
     <div class="container">
     	<div class="row service-wrapper-row">
   			<div class="col-md-12">
   		    <h2><%= service.name %></h2>
-			<h4><%= service.description %></h4>
+          <h4><%= service.description %></h4>
         </div>
-		<% if service.subservices %>
+		    <% if service.subservices %>
 	        <% service.subservices.each do |subservice| %>
 	          <div class="row service-wrapper-row">
 	            <div class="col-sm-3">
@@ -110,9 +118,9 @@ mail:
 		              <% end %>
 	              <% end %>
 	            </div>
-	  		  </div>
-			<% end %>
-		<% end %>
+            </div>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
