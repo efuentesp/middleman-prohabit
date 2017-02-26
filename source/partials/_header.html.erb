@@ -6,7 +6,7 @@
       <div class="extras">
         <ul>
           <li>
-            <b><i class="fa fa-envelope-o"></i> Email:</b> <%= mail_to data.contact.email, data.contact.email %>
+            <b><i class="fa fa-envelope-o"></i> eMail:</b> <%= mail_to data.contact.email, data.contact.email %>
           </li>
           <li>
             <b><i class="fa fa-phone"></i> Oficina:</b> <%= data.contact.phone %>
@@ -20,6 +20,11 @@
           <li>
             <% link_to 'https://www.facebook.com/'+data.contact.facebook, :title => 'Facebook' do %>
               <i class="fa fa-facebook-official"></i> Facebook
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://plus.google.com/'+data.contact.googleplus, :title => 'Google Plus' do %>
+              <i class="fa fa-google-plus"></i> Google Plus
             <% end %>
           </li>
           <li>

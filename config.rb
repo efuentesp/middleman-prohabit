@@ -42,6 +42,11 @@ activate :blog do |blog|
   #blog.new_article_template = "source/article-templates/product-template.erb"
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-92680708-1'
+  ga.domain_name = 'prohabit.mx'
+end
+
 activate :directory_indexes
 activate :sprockets
 activate :middleman_simple_thumbnailer

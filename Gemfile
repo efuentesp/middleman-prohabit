@@ -20,3 +20,4 @@ gem 'middleman-blog'
 gem "middleman-sprockets", '>= 4.0.0'
 
 gem 'middleman-simple-thumbnailer'
+gem 'middleman-google-analytics', '~> 3.0'
