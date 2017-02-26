@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= page_title %></title>
+    <meta name="description" content="<%= page_description %>">
+  </head>
+  <body>
+    <% root_url = data.site.home_url %>
+    <ul>
+      <% sitemap.resources.each do |page| %>
+        <% if page.path =~ /\.html/ && page.path != 'sitemap.html' %>
+          <li>
+            <% link_to page.url do %>
+              <%= page.data.title || page_title %>
+            <% end %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </body>
+</html>

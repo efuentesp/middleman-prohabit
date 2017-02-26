@@ -1,0 +1,32 @@
+---
+title: Página no encontrada
+description: Lo sentimos, la página que buscas no existe.
+---
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><%= current_page.data.title %></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="error-page-wrapper">
+					<p><%= current_page.data.description %></p>
+					<p>
+						<% link_to '/', :class => 'btn btn-primary' do %>
+							<i class="fa fa-home"></i> Inicio
+						<% end %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

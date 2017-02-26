@@ -1,0 +1,13 @@
+# Required
+language: 'es-MX'
+url: 'http://www.prohabit.mx'
+human_url: 'ProHabit.com'
+name: 'Promotora Inmobiliaria ProHabit San Martín'
+description: 'Promotora Inmobiliaria ProHabit San Martín. Venta de: Desarrollos Inmobiliarios, Casas, Departamentos, Bodegas, Terrenos y cualquier Bien Inmueble.'
+title: 'ProHabit San Martín'
+
+# Optional
+logo_image_name: 'logo.png'
+logo_image_path: 'http://www.prohabit.mx/images/logo.png'
+twitter_handle: '@ProHabitMx'
+facebook_app_id: 'prohabit.snmartin'
