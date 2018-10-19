@@ -17,7 +17,7 @@ land:
 garages: 1
 main_image: residencial-del-bosque/conjunto.jpg
 mapimage: residencial-del-bosque/mapa.png
-googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/19.2675701,-98.4464215/@19.2730669,-98.4468306,15z/data=!4m9!4m8!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355089!2d19.2828984!1m0!3e0?hl=es_MX"
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/19.2675701,-98.4464215/@19.2732746,-98.4523086,14.75z/data=!4m9!4m8!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355089!2d19.2828984!1m0!3e0?hl=es_MX"
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 
 photos:
@@ -53,7 +53,7 @@ El sistema de construcción:
 - Instalación eléctrica con poliducto y cables THW.
 - Impermeabilización con puntura tupo tipo 2000 de COMEX o similar, altamente reflectivo a los rayos del sol garantía: 3 años.
 
-Los departamentos Del Bosque que cuentan con acabados que armonizan con gran variedad de gustos decorativos.
+Los departamentos Del Bosque cuentan con acabados que armonizan con gran variedad de gustos decorativos.
 
 Acabados:
 

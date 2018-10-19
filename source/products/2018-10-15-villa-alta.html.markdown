@@ -23,7 +23,7 @@ photos:
   - img: villa-alta/fachada.jpg
     title: Villa Alta
     description:
-  - img: villa-alta/distribuccion-vivienda.jpg
+  - img: villa-alta/distribucion-vivienda.jpg
     title: Planta Descriptiva
     description: 
   - img: villa-alta/sala-comedor-vista1.jpg

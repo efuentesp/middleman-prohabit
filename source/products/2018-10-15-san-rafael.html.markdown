@@ -3,7 +3,7 @@ title: Residencial San Rafael
 date: 2018-10-15 18:00 UTC
 tags:
 category: Venta
-description: Fraccionamiento, última etapa, totalmente cerrado con Caseta de Vigilancia. Casas Unifamiliares de 2 plantas; 2, 3 ó 4 recámaras, ¡con opción a ampliarse hasta 4 recámaras!. Todas con Calentador de Paso de recuperación rápida; Jardín y Patio de Servicio. Con instalaciones de luz, agua y drenaje subterraneas; alumbrado público, áreas verdes con Juegos Infantiles, Zona Deportiva y calles asfaltadas. Ubicadas en calle Emiliano Zapata No. 49 en San Rafael Tlanalapa. A 10 minutos del Centro de San Martín Texmelucan.
+description: Fraccionamiento, última etapa, totalmente cerrado con Caseta de Vigilancia. Casas Unifamiliares de 2 plantas; 2, 3 ó 4 recámaras, ¡con opción a ampliarse hasta 4 recámaras!. Todas con Calentador de Paso de recuperación rápida; Jardín y Patio de Servicio. Con instalaciones de luz, agua y drenaje subterraneas; alumbrado público, áreas verdes con Juegos Infantiles, Zona Deportiva y calles asfaltadas. Ubicadas en calle Emiliano Zapata No. 49 en San Rafael Tlanalapa. A 15 minutos del Centro de San Martín Texmelucan.
 status: Disponible
 price: Desde $435,000 hasta $500,000
 address: Emiliano Zapata No. 49, San Rafael Tlanalapa

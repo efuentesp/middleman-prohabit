@@ -14,31 +14,31 @@ bathrooms: 1
 m2: 46
 land: 
 garages: 1
-main_image: la-luz/la-luz.jpg
-mapimage: la-luz/mapa.png
-googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/19.2750243,-98.4444288/@19.2784206,-98.4451429,16z/data=!4m10!4m9!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355089!2d19.2828984!1m0!3e0!5i1?hl=es_MX"
+main_image: la-luz-2/la-luz-2.jpg
+mapimage: la-luz-2/mapa.png
+googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/19.2750243,-98.4444288/@19.2779676,-98.4462296,15.75z/data=!4m9!4m8!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355089!2d19.2828984!1m0!3e0?hl=es_MX"
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
 
 photos:
-  - img: la-luz/la-luz.jpg
+  - img: la-luz-2/la-luz-2.jpg
     title: La Luz II
     description:
-  - img: la-luz/planta-descriptiva.jpg
+  - img: la-luz-2/planta-descriptiva.jpg
     title: Planta Descriptiva
     description: 
-  - img: la-luz/comedor-sala.jpg
+  - img: la-luz-2/comedor-sala.jpg
     title: Sala-Comedor
     description:
-  - img: la-luz/recamara-1.jpg
+  - img: la-luz-2/recamara-1.jpg
     title: Recamara 1
     description:
-  - img: la-luz/recamara-2.jpg
+  - img: la-luz-2/recamara-2.jpg
     title: Recamara 2
     description:
-  - img: la-luz/baño.jpg
+  - img: la-luz-2/baño.jpg
     title: Baño Completo
     description:
-  - img: la-luz/patio-servicio.jpg
+  - img: la-luz-2/patio-servicio.jpg
     title: Patio de Servicio
     description:
 ---

@@ -3,7 +3,8 @@ title: Residencial Real de la Huerta
 date: 2018-10-15 19:00 UTC
 tags:
 category: Venta
-description: Los departamentos Real de la Huerta cuentan con los siguientes acabados; Piso de concreto púlido, Piso de loseta cerámica en zona de regadera, Loseta cerámica en muros de regadera y lambrín en muros de cocina, Yeso en plafón acabado con tirol de gota, Pintura vinílica en plafón de cocina y baño, Accesorios eléctricos plastificados, Herrería de aluminio en ventanas y puertas exteriores, Puertas de tambor prefabricadas en interiores. Usan calentador de paso, Válvulas obturadoras de flujo hidráulicas para menos consumo, Mezcladoras ahorradoras para lavabo y fregadero, Focos LED's. A menos de 5 minutos de Bodega Aurrera y a unos pasos del Hospital CESSA.
+description: "Condominios Real de la Huerta se encuentran a 10 minutos del Zócalo de San Martín Texmelucan; a tan solo una cuadra  se encuentra el Centro de Salud con Servicios Ampliados (CESSA) y a menos de 5 minutos está ubicada la Bodega Aurrera.
+Condominios Real de la Huerta tiene un total de 100 departamentos; repartidos en 5 edificios con 5 niveles en cada torre."
 status: Disponible
 price: Desde $339,000 hasta $414,000
 address: Calle Antonio Montes, Col. La Huerta
@@ -46,4 +47,50 @@ photos:
     description:
 ---
 
-Son un espacio cerrado que brinda seguridad y tranquilidad a tu familia. La urbanización cuenta con; Instalación eléctrica subterránea, Alumbrado equipado con control de fotocelda para su encendido automático, Red de drenaje pluvial y red de drenaje sanitario separados para conducción independiente, Área para caseta de vigilancia. Los edificios estan distribuidos en 5 niveles Tienen impermeabilizante prefabricado de 3.5mm, Instalación de gas, Instalación hidráulica, e Instalación eléctrica.
+Condominios Real de la Huerta están construidos con materiales que cumplen con las normas de calidad establecidas por INFONAVIT y con supervisiones que garantizan estándares de calidad.
+
+El sistema de construcción:
+
+- Losas de cimentación de concreto armado
+- Muros de tabique industrial acabado aparente.
+- Castillos y cadenas de concreto armado.
+- Losa de vigueta pretensada y bovedilla.
+- Instalación hidráulica, tubería de CPVC, cisterna 20 m³ y tinacos de 2500 lts.
+- Instalación sanitaria con tubería de PVC sanitario.
+- Instalación de gas con tuberías PE-AL-PE.
+- Instalación eléctrica con poliducto y cables THW.
+- Impermeabilizante prefabricado de 3,5mm, acabado con grano terracota y adherido por termo-fusión con 5 años de garantía (azoteas).
+
+Los departamentos Real de la huerta cuentan con acabados que armonizan con gran variedad de gustos decorativos.
+
+Acabados:
+
+- Piso de concreto pulido.
+- Piso de loseta cerámica en zona de regadera.
+- Loseta cerámica en muros de regadera y lambrín en muros de cocina.
+- Yeso en plafón acabado con tirol de gota.
+- Pintura vinílica en plafón de cocina y baño.
+- Accesorios eléctricos plastificados.
+- Herrería de aluminio en ventanas y puertas exteriores.
+- Puertas de tambor prefabricadas en interiores.
+
+Los departamentos Real de la Huerta cuentan con elementos que contribuyen a una vivienda ecológica y autosustentable.
+
+Las tecnológicas usadas son las siguientes:
+
+- Calentador de paso.
+- Válvulas obturadoras de flujo hidráulica para menos consumo de agua en fregaderos, lavabos y WC’s.
+- Mezcladoras ahorradoras para lavabo y fregadero.
+- Muebles sanitarios WC con tanque de 5lts.
+- Focos LED’s.
+
+Los departamentos Real de la Huerta se encuentran en un espacio cerrado para brindar seguridad y tranquilidad a tu familia.
+
+Urbanización:
+
+- Instalación eléctrica subterránea.
+- Alumbrado con postes tipo colonial y equipado con control de foto-celda para su encendido automático.
+- Red de drenaje pluvial y red de drenaje sanitario separados para conducción independiente.
+- Banquetas y guarniciones de concreto.
+- Estacionamiento para un auto.
+- Área para caseta de vigilancia.
