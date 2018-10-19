@@ -35,19 +35,19 @@ photos:
   - img: villa-alta/recamara22.jpg
     title: Recamara 2
     description:
-    img: villa-alta/vista-baño-completo.jpg
+  - img: villa-alta/vista-baño-completo.jpg
     title: Baño Completo
     description:
   - img: villa-alta/baño.jpg
     title: Baño Completo
     description:
-    img: villa-alta/vista-medio-baño.jpg
+  - img: villa-alta/vista-medio-baño.jpg
     title: Medio Baño
     description:
   - img: villa-alta/acceso-jardin-trasero.jpg
     title: Acceso al jardín trasero
     description:
-    img: villa-alta/area-deportiva.jpg
+  - img: villa-alta/area-deportiva.jpg
     title: Área deportiva
     description:
 ---

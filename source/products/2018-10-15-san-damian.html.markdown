@@ -35,13 +35,13 @@ photos:
   - img: san-damian/recamaras.jpg
     title: Recamara 1 y 2
     description:
-    img: san-damian/recamara3.jpg
+  - img: san-damian/recamara3.jpg
     title: Recamara 3
     description:
   - img: san-damian/baño.jpg
     title: Baño Completo
     description:
-    img: san-damian/patio-de-servicio.jpg
+  -  img: san-damian/patio-de-servicio.jpg
     title: Patio de Servicio
     description:
 
