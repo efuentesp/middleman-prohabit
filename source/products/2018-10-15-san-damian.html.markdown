@@ -18,34 +18,30 @@ main_image: san-damian/1.jpg
 mapimage: san-damian/mapa.png
 googlemaps_url: "https://www.google.com/maps/dir/Zocalo+Texmelucan,+Hidalgo+Poniente+12,+Col+Centro,+74000+San+Mart%C3%ADn+Texmelucan+de+Labastida,+Pue.,+Mexico/19.289721,-98.4246526/@19.2857355,-98.4335603,16z/data=!4m9!4m8!1m5!1m1!1s0x85cfd47eb7fe7e05:0x82ec6fa23af5aa23!2m2!1d-98.4355089!2d19.2828984!1m0!3e0?hl=es_MX"
 googlemaps_place: Calle+H,San+Rafael,Texalhuacan
-
 photos:
   - img: san-damian/1.jpg
     title: Unidad Habitacional San Damian
     description:
   - img: san-damian/distribucion.jpg
     title: Distribución
-    description: 
+    description:
   - img: san-damian/sala-comedor.jpg
     title: Sala-Comedor
     description:
-  - img: san-damian/baño-cocina.jpg
-    title: Baño-Cocina
-    description:
   - img: san-damian/recamaras.jpg
-    title: Recamara 1 y 2
+    title: Recamaras 1 y 2
     description:
   - img: san-damian/recamara3.jpg
     title: Recamara 3
     description:
-  - img: san-damian/baño.jpg
-    title: Baño Completo
+  - img: san-damian/baño-cocina.jpg
+    title: Sala-Comedor
     description:
-  -  img: san-damian/patio-de-servicio.jpg
+  - img: san-damian/patio-de-servicio.jpg
     title: Patio de Servicio
     description:
-
 ---
+
 
 Está etapa solo contara con 30 departamentos distribuidos en 3 torres de 5 niveles cada torre.
 Cada departamento tiene 70 m2 de construcción, dividido en sala, comedor, 3 recamaras, cocina, baño completo y patio de servicio.
