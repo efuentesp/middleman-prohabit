@@ -32,13 +32,10 @@ photos:
   - img: villa-alta/recamara1.jpg
     title: Recamara 1
     description:
-  - img: villa-alta/recamara22.jpg
+  - img: villa-alta/recamara2.jpg
     title: Recamara 2
     description:
   - img: villa-alta/vista-baño-completo.jpg
-    title: Baño Completo
-    description:
-  - img: villa-alta/baño.jpg
     title: Baño Completo
     description:
   - img: villa-alta/vista-medio-baño.jpg
